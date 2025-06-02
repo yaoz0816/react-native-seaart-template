@@ -1,0 +1,54 @@
+{
+  // 继承 React Native 的基础 TypeScript 配置
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    // 配置平台特定文件后缀的解析顺序，用于 React Native 的平台特定代码
+    "moduleSuffixes": [".ios", ".android", ".native", ""],
+    // 禁用装饰器实验性特性
+    "experimentalDecorators": false,
+    // 使用 define 来定义类字段，而不是 Object.defineProperty
+    "useDefineForClassFields": true,
+    // 使用最新的 ES 模块系统
+    "module": "ESNext",
+    // 设置模块解析的基准目录
+    "baseUrl": "./",
+    // 配置模块导入路径别名，@ 指向 src 目录
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    // 允许 UMD 全局访问
+    "allowUmdGlobalAccess": true,
+    // 启用所有严格的类型检查选项
+    "strict": true,
+    // 禁止隐式的 any 类型
+    "noImplicitAny": true,
+    // 启用严格的空值检查
+    "strictNullChecks": true,
+    // 启用严格的函数类型检查
+    "strictFunctionTypes": true,
+    // 禁止 this 的隐式 any 类型
+    "noImplicitThis": true,
+    // 报告未使用的局部变量错误
+    "noUnusedLocals": true,
+    // 报告未使用的参数错误
+    "noUnusedParameters": true,
+    // 确保函数都有返回值
+    "noImplicitReturns": true,
+    // 防止 switch 语句中的贯穿错误
+    "noFallthroughCasesInSwitch": true,
+    // 生成源码映射文件，方便调试
+    "sourceMap": true,
+    // 跳过声明文件的类型检查，提高编译性能
+    "skipLibCheck": true,
+    // 使用 React 的 JSX 转换运行时
+    "jsx": "react-native"
+  },
+  // 指定需要进行类型检查的文件
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.d.ts",
+    "src/types/**/*.d.ts",
+    "index.js"
+  ]
+}

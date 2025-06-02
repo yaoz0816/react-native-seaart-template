@@ -1,0 +1,232 @@
+// {
+//   // 编辑器设置 - Cursor专用配置
+//   "editor.formatOnSave": true,
+//   "editor.formatOnPaste": true,
+//   "editor.formatOnType": false,
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll.eslint": "explicit",
+//     "source.organizeImports": "explicit"
+//   },
+
+//   // Cursor AI 设置
+//   "cursor.chat.alwaysAllowReadWorkspace": true,
+//   "cursor.cpp.disabledLanguages": [],
+//   "cursor.general.enableVimMode": false,
+
+//   // 默认格式化工具
+//   "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+//   // 特定文件类型的格式化工具
+//   "[javascript]": {
+//     "editor.defaultFormatter": "esbenp.prettier-vscode",
+//     "editor.formatOnSave": true
+//   },
+//   "[typescript]": {
+//     "editor.defaultFormatter": "esbenp.prettier-vscode",
+//     "editor.formatOnSave": true
+//   },
+//   "[javascriptreact]": {
+//     "editor.defaultFormatter": "esbenp.prettier-vscode",
+//     "editor.formatOnSave": true
+//   },
+//   "[typescriptreact]": {
+//     "editor.defaultFormatter": "vscode.typescript-language-features",
+//     "editor.formatOnSave": true
+//   },
+//   "[json]": {
+//     "editor.defaultFormatter": "esbenp.prettier-vscode",
+//     "editor.formatOnSave": true
+//   },
+//   "[jsonc]": {
+//     "editor.defaultFormatter": "esbenp.prettier-vscode",
+//     "editor.formatOnSave": true
+//   },
+
+//   // ESLint设置
+//   "eslint.enable": true,
+//   "eslint.validate": [
+//     "javascript",
+//     "javascriptreact",
+//     "typescript",
+//     "typescriptreact"
+//   ],
+//   "eslint.codeActionsOnSave.mode": "all",
+//   "eslint.format.enable": false,
+
+//   // Prettier设置
+//   "prettier.enable": true,
+//   "prettier.requireConfig": true,
+//   "prettier.useEditorConfig": false,
+//   "prettier.configPath": ".prettierrc.js",
+
+//   // TypeScript设置
+//   "typescript.preferences.importModuleSpecifier": "relative",
+//   "typescript.suggest.autoImports": true,
+//   "typescript.updateImportsOnFileMove.enabled": "always",
+//   "typescript.preferences.includePackageJsonAutoImports": "auto",
+
+//   // 文件保存设置
+//   "files.autoSave": "onFocusChange",
+//   "files.trimTrailingWhitespace": true,
+//   "files.insertFinalNewline": true,
+//   "files.trimFinalNewlines": true,
+
+//   // React Native特定设置
+//   "emmet.includeLanguages": {
+//     "javascript": "javascriptreact",
+//     "typescript": "typescriptreact"
+//   },
+//   "emmet.triggerExpansionOnTab": true,
+
+//   // 搜索排除设置
+//   "search.exclude": {
+//     "**/node_modules": true,
+//     "**/bower_components": true,
+//     "**/*.code-search": true,
+//     "**/ios/build": true,
+//     "**/android/build": true,
+//     "**/android/.gradle": true,
+//     "**/.git": true,
+//     "**/dist": true,
+//     "**/.next": true,
+//     "**/.nuxt": true
+//   },
+
+//   // 文件监视排除
+//   "files.watcherExclude": {
+//     "**/.git/objects/**": true,
+//     "**/.git/subtree-cache/**": true,
+//     "**/node_modules/*/**": true,
+//     "**/ios/build/**": true,
+//     "**/android/build/**": true,
+//     "**/android/.gradle/**": true,
+//     "**/dist/**": true
+//   },
+
+//   // 设置 i18n-ally 显示语言为简体中文
+//   "i18n-ally.displayLanguage": "zh-CN",
+//   // 设置 i18n-ally 键样式为嵌套式
+//   "i18n-ally.keystyle": "nested",
+//   // 设置 i18n-ally 本地化文件路径
+//   "i18n-ally.localesPaths": ["src/locales"],
+//   // 设置 i18n-ally 源语言为简体中文
+//   "i18n-ally.sourceLanguage": "zh-CN",
+
+//   // JavaScript 设置
+//   // 设置 JavaScript 导入模块说明符为非相对路径
+//   "javascript.preferences.importModuleSpecifier": "relative",
+//   // 设置 JavaScript 导入模块说明符结尾为最小化
+//   "javascript.preferences.importModuleSpecifierEnding": "minimal",
+//   // 设置 JavaScript 文件移动时自动更新导入
+//   "javascript.updateImportsOnFileMove.enabled": "always",
+//   // 设置 JavaScript 粘贴时自动更新导入
+//   "javascript.updateImportsOnPaste.enabled": true,
+
+//   // TailwindCSS 设置
+//   "tailwindCSS.classAttributes": ["style", "className", "class"],
+//   "tailwindCSS.experimental.classRegex": [
+//     "tw`([^`]*)",
+//     "tw\\\\('([^']*)'\\\\)",
+//     "tw\\\\(\"([^\"]*)\"\\\\)",
+//     ["tw\\\\.style\\\\(([^)]*)\\\\)", "'([^']*)'"]
+//   ],
+
+//   // Cursor特定的代码补全设置
+//   "editor.inlineSuggest.enabled": true,
+//   "editor.quickSuggestions": {
+//     "other": true,
+//     "comments": false,
+//     "strings": true
+//   },
+
+//   // 代码折叠设置
+//   "editor.foldingStrategy": "indentation",
+//   "editor.showFoldingControls": "always",
+
+//   // 括号配对设置
+//   "editor.guides.bracketPairs": "active",
+//   "editor.bracketPairColorization.enabled": true,
+
+//   "cSpell.words": ["normornizse", "seaart", "twrnc", "mmkv"]
+// }
+{
+  // 编辑器设置
+  // 保存时自动格式化
+  "editor.formatOnSave": true,
+  // 设置默认格式化工具为 ESLint
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // 保存时自动修复 ESLint 问题
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  // ESLint 设置
+  // 启用 ESLint 格式化
+  "eslint.format.enable": true,
+  // 文件类型特定设置
+  // JavaScript 文件的特定设置
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  // JavaScript React 文件的特定设置
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  // JSON 文件的特定设置
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // TypeScript React 文件的特定设置
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  // Markdown 文件的特定设置
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  // TypeScript 文件的特定设置
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  // i18n-ally 设置
+  // 设置 i18n-ally 显示语言为简体中文
+  "i18n-ally.displayLanguage": "zh-CN",
+  // 设置 i18n-ally 键样式为嵌套式
+  "i18n-ally.keystyle": "nested",
+  // 设置 i18n-ally 本地化文件路径
+  "i18n-ally.localesPaths": ["src/locales"],
+  // 设置 i18n-ally 源语言为简体中文
+  "i18n-ally.sourceLanguage": "zh-CN",
+  // JavaScript 设置
+  // 设置 JavaScript 导入模块说明符为非相对路径
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  // 设置 JavaScript 导入模块说明符结尾为最小化
+  "javascript.preferences.importModuleSpecifierEnding": "minimal",
+  // 设置 JavaScript 文件移动时自动更新导入
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // 设置 JavaScript 粘贴时自动更新导入
+  "javascript.updateImportsOnPaste.enabled": true,
+  // TailwindCSS 设置
+  // 设置 TailwindCSS 识别的类属性名称
+  "tailwindCSS.classAttributes": ["style"],
+  // 设置 TailwindCSS 实验性正则表达式匹配模式
+  "tailwindCSS.experimental.classRegex": [
+    // 匹配 tw`...` 模板字符串语法
+    "tw`([^`]*)",
+    // 匹配 tw('...') 模板字符串语法
+    "tw\\('([^']*)'\\)",
+    // 匹配 tw.style(...) 函数调用语法中的字符串
+    ["tw.style\\(([^)]*)\\)", "'([^']*)'"]
+  ],
+  // TypeScript 设置
+  // 设置 TypeScript 导入模块说明符为非相对路径
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  // 设置 TypeScript 导入模块说明符结尾为最小化
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  // 设置 TypeScript 文件移动时自动更新导入
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // 设置 TypeScript 粘贴时自动更新导入
+  "typescript.updateImportsOnPaste.enabled": true,
+  // 设置 TypeScript SDK 路径
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": ["normornizse"]
+}

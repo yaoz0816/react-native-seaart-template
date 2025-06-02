@@ -1,0 +1,10 @@
+{
+  "name": "SeaArtRNTemplate",
+  "displayName": "SeaArtRNTemplate",
+  "plugins": [
+    "expo-localization",
+    "expo-video",
+    "react-native-appsflyer",
+    "react-native-edge-to-edge"
+  ]
+}

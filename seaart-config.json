@@ -1,0 +1,95 @@
+{
+  "templateInfo": {
+    "name": "SeaArt React Native Template",
+    "version": "1.0.0",
+    "description": "海艺团队专用的 React Native 开发模板",
+    "author": "SeaArt Technology Team",
+    "license": "MIT"
+  },
+  "defaultConfig": {
+    "packageNamePrefix": "com.seaart",
+    "supportedLanguages": ["zh-CN", "en-US"],
+    "defaultTheme": "light"
+  },
+  "recommendedNaming": {
+    "projects": [
+      {
+        "type": "画廊应用",
+        "name": "SeaArtGallery",
+        "package": "com.seaart.gallery"
+      },
+      {
+        "type": "创作工具",
+        "name": "SeaArtStudio",
+        "package": "com.seaart.studio"
+      },
+      {
+        "type": "社区应用",
+        "name": "SeaArtCommunity",
+        "package": "com.seaart.community"
+      },
+      {
+        "type": "商城应用",
+        "name": "SeaArtMarket",
+        "package": "com.seaart.market"
+      },
+      {
+        "type": "管理后台",
+        "name": "SeaArtAdmin",
+        "package": "com.seaart.admin"
+      }
+    ]
+  },
+  "integrations": {
+    "ui": {
+      "expo-image": "^2.0.7",
+      "@shopify/flash-list": "1.7.3",
+      "react-native-reanimated": "^3.16.7",
+      "twrnc": "^4.6.1"
+    },
+    "state": {
+      "zustand": "^5.0.5"
+    },
+    "network": {
+      "axios": "^1.9.0"
+    },
+    "i18n": {
+      "i18next": "^25.2.1",
+      "react-i18next": "^15.5.2"
+    },
+    "development": {
+      "@typescript-eslint/eslint-plugin": "^8.32.1",
+      "@typescript-eslint/parser": "^8.32.1",
+      "eslint-config-prettier": "^10.1.5",
+      "prettier": "2.8.8"
+    }
+  },
+  "scripts": {
+    "setup": "配置项目名称和包名",
+    "clean": "清理 Metro 缓存",
+    "clean:android": "清理 Android 构建缓存",
+    "clean:ios:pnpm": "清理 iOS 缓存 (pnpm)",
+    "prepare-scaffold": "准备脚手架分发"
+  },
+  "guidelines": {
+    "codeStyle": {
+      "components": "使用 PascalCase 命名组件",
+      "files": "使用 camelCase 命名文件",
+      "constants": "使用 UPPER_SNAKE_CASE 命名常量",
+      "functions": "使用 camelCase 命名函数"
+    },
+    "structure": {
+      "components": "通用组件放在 src/components/",
+      "screens": "页面组件放在 src/screens/",
+      "utils": "工具函数放在 src/utils/",
+      "types": "类型定义放在 src/types/"
+    },
+    "bestPractices": [
+      "优先使用函数组件和 Hooks",
+      "使用 TypeScript 进行类型定义",
+      "遵循 ESLint 配置的代码规范",
+      "使用 Zustand 进行状态管理",
+      "网络请求使用封装的 axios 实例"
+    ]
+  }
+}
